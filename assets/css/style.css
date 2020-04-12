@@ -24,6 +24,12 @@ body {
     padding-right: 20px;
 }
 
+#topImageL {
+    float: left;
+    margin-top: -20px;
+    margin-right: 40px;
+}
+
 .container-image {
     background-image: url("assets/images/mickey_train.png");
     background-size: cover;
@@ -32,6 +38,14 @@ body {
 .card-header {
     background-color: rgb(134, 20, 20);
     color: white;
+}
+
+.card-body {
+    border-color: red;
+}
+
+#formSubmit {
+    background-color: rgb(131, 14, 14);
 }
 
 
