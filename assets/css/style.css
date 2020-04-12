@@ -12,6 +12,10 @@ body {
     border-color: rgb(131, 14, 14);
 }
 
+.card {
+    border-color: rgb(131, 14, 14);
+}
+
 .display-4 {
     font-size: 8vw;
     margin: auto;
@@ -30,67 +34,11 @@ body {
     margin-right: 40px;
 }
 
-.container-image {
-    background-image: url("assets/images/mickey_train.png");
-    background-size: cover;
-}
-
 .card-header {
     background-color: rgb(134, 20, 20);
     color: white;
 }
 
-.card-body {
-    border-color: red;
-}
-
 #formSubmit {
     background-color: rgb(131, 14, 14);
 }
-
-
-/* 
-p {
-    font-size: 20px;
-}
-
-.panel-title {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 5px;
-    text-align: left;
-    background-color: blue;
-    color: white;
-}
-
-.row {
-    width: 85%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 20px;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type=submit]:hover {
-    background-color: #45a049;
-}
-
-div.row {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-} */
