@@ -7,7 +7,7 @@
 // Initialize Firebase
 
 
-{ /* // Your web app's Firebase configuration */ }
+/* // Your web app's Firebase configuration */
 var firebaseConfig = {
     apiKey: "AIzaSyAo69pU-EG7ldTuJrs4IpM3vvoi_fALyFA",
     authDomain: "trainscheduler-e858c.firebaseapp.com",
@@ -17,7 +17,8 @@ var firebaseConfig = {
     messagingSenderId: "20057657526",
     appId: "1:20057657526:web:0b0a6ccc285a24f73e5617",
     measurementId: "G-9BQBJ2GL5P"
-}; { /* // Initialize Firebase */ }
+};
+/* // Initialize Firebase */
 firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 
@@ -26,41 +27,45 @@ firebase.initializeApp(firebaseConfig);
 //get a reference to the database service
 var database = firebase.database();
 
+var train;
+var destination;
+var frequency;
+var newTrain;
+//snapshot varialbes
+var newDestination;
+var newFrequency;
+var minutes;
+var trainArrival;
+var addTrain;
+var refKey;
+var key;
 
-$("#formGroup").on("submit"),
+// add train form submitted
+$("#formGroup").on("formSubmit",
     function(event) {
         event.preventDefault();
-
-        //initial variables
+        // get values and push to database
+        getValues("#train-name", "#train-destination", "#frequency");
+        database.ref().push(addTrain);
         // also set in firebase
         var trainName = $("train-name").val().trim();
         var destination = $("train-destination").val().trim();
         var frequency = $("frequency").val().trim();
-        var firstTrainTime = $("train-time").val().trim();
-        // var minAway = $("Minutes Away").val().trim();
 
-        // database.ref().set({
-        database.ref().push({
+        database.ref().set({
             trainName: trainName,
             destination: destination,
             frequency: frequency,
-            firstTrainTime: firstTrainTime
-                // nextArrival: nextArrival,
-                // minAway: minAway,
         });
+
         $("#train-name").val("");
         $("#train-destination").val("");
         $("#frequency").val("");
-        $("#train-time").val("");
-        // console.log(traintime);
-        return false;
-    };
+
+        // return false;
+    });
 
 database.ref().orderByChild("dateAdded").on("child_added", function(childSnapshot) {
-
-    //for an add and remove button 
-    // var updateButton = $("<button>").html("<span class='glyphicon glyphicon-edit'></span>").addClass("updateButton").attr("data-index", index).attr("data-key", childSnapshot.key);
-    // var removeButton = $("<button>").html("<span class='glyphicon glyphicon-remove'></span>").addClass("removeButton").attr("data-index", index).attr("data-key", childSnapshot.key);
 
 
     // var firstTime = childSnapshot.val().firstTime;
