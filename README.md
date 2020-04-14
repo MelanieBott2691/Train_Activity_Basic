@@ -12,8 +12,16 @@ Add Train Secion:
 Train Scheduler Theme:
 Disney Express
 Trains to the Disney World Parks
+https://melaniebott2691.github.io/Train_Activity_Basic/
 
-Assignment setup, styled but input added is not inputting in the firebase database.
+Assignment built with:
+
+- Firebase Database
+- HTML
+- Bootstrap
+- CSS
+- JavaScript
+- Moment.js
 
 Trying to add an screenshot of train scheduler
 ! [Image of Disney Express] (assets/images/DisneyExpress.png)
