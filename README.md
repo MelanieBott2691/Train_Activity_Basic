@@ -12,6 +12,7 @@ Add Train Secion:
 Train Scheduler Theme:
 Disney Express
 Trains to the Disney World Parks
+
 https://melaniebott2691.github.io/Train_Activity_Basic/
 
 Assignment built with:
@@ -23,6 +24,7 @@ Assignment built with:
 - JavaScript
 - Moment.js
 
+
+
 Trying to add an screenshot of train scheduler
 ! [Image of Disney Express] (assets/images/DisneyExpress.png)
-Format: ![Alt Text] (url)
