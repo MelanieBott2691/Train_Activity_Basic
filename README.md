@@ -27,4 +27,4 @@ Assignment built with:
 
 
 Trying to add an screenshot of train scheduler
-![Image of Disney Express](images/DisneyExpress.png)
+![Image of Disney Express](DisneyExpress.png)
