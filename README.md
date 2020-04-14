@@ -14,3 +14,7 @@ Disney Express
 Trains to the Disney World Parks
 
 Assignment setup, styled but input added is not inputting in the firebase database.
+
+Trying to add an screenshot of train scheduler
+! [Image of Disney Express] (assets/images/DisneyExpress.png)
+Format: ![Alt Text] (url)
