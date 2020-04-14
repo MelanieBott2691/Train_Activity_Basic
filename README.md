@@ -25,6 +25,4 @@ Assignment built with:
 - Moment.js
 
 
-
-Trying to add an screenshot of train scheduler
 ![Image of Disney Express](assets/images/DisneyExpress.png)
